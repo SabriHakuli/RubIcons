@@ -1,0 +1,209 @@
+
+@import "./colors";
+@import "./fonts";
+@import "./buttons";
+
+$vertical-center: auto 0;
+$horizontal-center: 0 auto;
+
+
+
+body {
+    background: $background-color;
+    color: $text-color;
+    padding: 0 140px;
+}
+
+
+
+.float-right {
+    text-align: right;
+    float: right;
+}
+
+.float-left {
+    text-align: right;
+    float: right;
+}
+
+.Header {
+    margin-top: 50px;
+
+    .Navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo {
+        font-size: 40px;
+        font-weight: bolder;
+        opacity: 87%;
+    }
+
+    .github-icon {
+        width: 35px;
+    }
+
+    .center {
+        margin: $vertical-center;
+    }
+
+    .title, h1 {
+        margin: $horizontal-center;
+        text-align: center;
+        font-size: 40px;
+        font-weight: normal;
+        opacity: 87%;
+        margin-top: 53px;
+    }
+
+    .Get-Started {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        div {
+            margin: 0 50px;
+            text-align: center;
+        }
+    }
+}
+
+.Navigation {
+    display: grid;
+    grid-template-columns: 400px auto;
+    margin-top: 100px   ;
+    
+
+    h4 {
+        font-weight: normal;
+        font-size: 22px;
+    }
+
+    .slider-container {
+        display: -webkit-box;
+
+        .slider {
+            -webkit-appearance: none;
+            height: 6px;
+            width: 341px;
+            border-radius: 8px;
+            background: $box-color;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+          }
+    
+          .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: $text-color;
+            cursor: pointer;
+            border: none;
+            opacity: 87%;
+          }
+          
+          .slider::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background: $text-color;
+            cursor: pointer;
+            border: none;
+            opacity: 87%;
+          }
+
+          .Slider-Value {
+              margin: 0;
+          }
+          
+            .Slider-Value {
+                margin: 0 0 0 12px;
+                font-size: 16px;
+            }
+    }
+
+    .Slider-text {
+        margin: 0 0 8px 0;
+        font-size: 16px;
+    }
+
+    .stroke-slider {
+        margin-top: 60px;
+    }
+
+    .stroke-color {
+        background: $box-color;
+        widows: 400px;
+        height: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: $vertical-center;
+        padding: 0 15px;
+        font-size: 22px;
+        color: $secondary-color;
+        margin: auto 0;
+        border-radius: 8px;
+
+        p {
+            margin: auto 0;
+        }
+
+
+        .select-color {
+            width: 40px;
+            height: 40px;
+            background: $primary-color;
+            border-radius: 8px;
+            margin: auto 0px auto auto;
+        }
+    }
+
+    .Content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        margin-left: 88px;
+        
+        .search {
+            background: $box-color;
+            width: 100%;
+            height: 70px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: $vertical-center;
+            padding: 0 15px;
+            font-size: 22px;
+            color: $secondary-color;
+            margin: auto 0;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        .filter {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 70px;
+
+            .filter-all, .dropdown {
+                margin: auto 0 auto 15px;
+            }
+        }
+
+        .Icon-Boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .Icon {
+                margin: 15px;
+                width: 200px;
+                height: 200px;
+                background: $box-color;
+                border-radius: 8px;
+                box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+
+
+
+}

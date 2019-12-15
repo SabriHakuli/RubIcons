@@ -1,0 +1,38 @@
+.btn-primary {
+    width: 186px;
+    text-align: center;
+    font-size: 24px;
+    color: $secondary-color;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    border: 1.5px solid $primary-color;
+    border-radius: 8px;
+    padding: 10px 32px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background: $box-color;
+        transition: 0.3s;
+    }
+}
+
+.btn-secondary {
+    width: 186px;
+    text-align: center;
+    font-size: 24px;
+    color: $secondary-color;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    border: 1.5px solid $secondary-color;
+    border-radius: 8px;
+    padding: 10px 32px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background: $box-color;
+        transition: 0.3s;
+    }
+}

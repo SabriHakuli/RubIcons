@@ -1,0 +1,15 @@
+{
+  "name": "rubicon",
+  "version": "1.0.0",
+  "description": "Rubicon Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Sabri Hakuli",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "node-sass": "^4.13.0"
+  }
+}
