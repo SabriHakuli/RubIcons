@@ -1,209 +1,192 @@
-
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "./colors";
 @import "./fonts";
 @import "./buttons";
 
+
 $vertical-center: auto 0;
 $horizontal-center: 0 auto;
-
-
 
 body {
     background: $background-color;
     color: $text-color;
-    padding: 0 140px;
 }
 
-
-
-.float-right {
-    text-align: right;
-    float: right;
-}
-
-.float-left {
-    text-align: right;
-    float: right;
-}
-
-.Header {
-    margin-top: 50px;
-
-    .Navigation {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+.header {
+    display: inline;
+    .icon {
+        font-size: 44px;
+        font-weight: bolder;
     }
 
-    .logo {
-        font-size: 40px;
-        font-weight: bolder;
-        opacity: 87%;
+
+    .github {
+        text-align: right;
+        margin: auto 0;
     }
 
     .github-icon {
         width: 35px;
+        margin: 0 auto;
     }
 
-    .center {
-        margin: $vertical-center;
-    }
-
-    .title, h1 {
-        margin: $horizontal-center;
-        text-align: center;
-        font-size: 40px;
+    .title h1 {
         font-weight: normal;
-        opacity: 87%;
-        margin-top: 53px;
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
     }
 
-    .Get-Started {
-        margin-top: 30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .get-started {
+        text-align: center;
 
         div {
-            margin: 0 50px;
-            text-align: center;
+            display: inline-block;
+            margin: 0 auto;
+            margin-top: 30px;
+
+            div {
+                
+                margin: 0 25px;
+            }
         }
     }
+
 }
 
-.Navigation {
-    display: grid;
-    grid-template-columns: 400px auto;
-    margin-top: 100px   ;
-    
+.navigation {
+    margin-top: 100px;
+    .range-slider {
 
-    h4 {
-        font-weight: normal;
-        font-size: 22px;
-    }
+        h4 {
+            font-weight: normal;
+            font-size: 22px;
+        }
 
-    .slider-container {
-        display: -webkit-box;
+        .slider-container {
+
+           display: block ruby;
+        }
 
         .slider {
             -webkit-appearance: none;
-            height: 6px;
-            width: 341px;
-            border-radius: 8px;
+            width: 90%;
+            height: 8px;
             background: $box-color;
-            -webkit-transition: .2s;
-            transition: opacity .2s;
+            border-radius: 8px;
           }
-    
+          
+          
           .slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
             width: 18px;
             height: 18px;
             background: $text-color;
-            cursor: pointer;
             border: none;
-            opacity: 87%;
+            cursor: pointer;
           }
           
           .slider::-moz-range-thumb {
             width: 18px;
             height: 18px;
             background: $text-color;
-            cursor: pointer;
             border: none;
-            opacity: 87%;
+            cursor: pointer;
           }
 
-          .Slider-Value {
-              margin: 0;
-          }
-          
-            .Slider-Value {
-                margin: 0 0 0 12px;
-                font-size: 16px;
-            }
-    }
-
-    .Slider-text {
-        margin: 0 0 8px 0;
-        font-size: 16px;
-    }
-
-    .stroke-slider {
-        margin-top: 60px;
-    }
-
-    .stroke-color {
-        background: $box-color;
-        widows: 400px;
-        height: 70px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: $vertical-center;
-        padding: 0 15px;
-        font-size: 22px;
-        color: $secondary-color;
-        margin: auto 0;
-        border-radius: 8px;
-
-        p {
-            margin: auto 0;
+          .slider-Value {
+            margin: 0;
         }
-
-
-        .select-color {
-            width: 40px;
-            height: 40px;
-            background: $primary-color;
-            border-radius: 8px;
-            margin: auto 0px auto auto;
-        }
-    }
-
-    .Content {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        margin-left: 88px;
         
-        .search {
+        .color-picker {
+            display: -webkit-box;
+            width: 105%;
+            height: 70px;
             background: $box-color;
-            width: 100%;
-            height: 70px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin: $vertical-center;
-            padding: 0 15px;
-            font-size: 22px;
-            color: $secondary-color;
-            margin: auto 0;
-            border: 0;
             border-radius: 8px;
+            padding: 15px;
+            margin-top: 60px;
+
+            p {
+                margin: auto 0;
+                padding: 0;
+                font-size: 22px;
+            }
+
+            input {
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+                text-align: right;
+                border: none;
+                padding: 0;
+            }
         }
+    }
 
+    .content {
+
+        margin: 0;
+      
+
+        .search-box {
+            input {
+                background: $box-color;
+                height: 70px;
+                border: none;
+                border-radius: 8px;
+                width: 100%;
+                font-size: 22px;
+                color: $text-color;
+                padding: 15px 19px;
+                
+            }
+        }
         .filter {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            height: 70px;
+            ul {
+                display: block;
+                text-decoration: none;
+                padding: 0;
+                li {
+                    display: inline;
+                    font-size: 22px;
+                    margin-right: 40px;
 
-            .filter-all, .dropdown {
-                margin: auto 0 auto 15px;
+                }
             }
         }
 
-        .Icon-Boxes {
+        .Boxes {
+
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 50px;
 
-            .Icon {
-                margin: 15px;
+            .Box {
                 width: 200px;
                 height: 200px;
                 background: $box-color;
-                border-radius: 8px;
                 box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.16);
+                border-radius: 8px;
+                margin: 15px;
+
+
+                
+                div {
+                    
+                    text-align: center;
+                    align-items: center;
+                    margin-top: 50px;
+                    
+                }
+                p {
+                    margin-top: 50px;
+                    text-align: center;
+                    position: bottom;
+                    bottom: 0;
+                }
             }
         }
     }
-
-
-
 }
